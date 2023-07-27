@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.parallax-container {
+  height: 100vh; /* Adjust this height based on your needs */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter-abdullah,
+.letter-hussain {
+  font-size: 48px; /* Adjust the font size based on your needs */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.animate-abdullah {
+  animation: slideFromLeft 1s forwards;
+}
+
+.animate-hussain {
+  animation: slideFromRight 1s forwards;
+}
+
+.curser {
+  background-color: #25eb25;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
